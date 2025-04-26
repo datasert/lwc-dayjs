@@ -8,6 +8,23 @@ we copied the esm files from [npm repo](https://www.npmjs.com/package/dayjs?acti
 ## Dayjs Version
 This repo currently has dayjs v1.11.13
 
+## Usage
+
+1. Copy the component into your org and deploy it.
+
+2. Then use the `dayjsUtils` component to get hold of `dayjs` instance and use its methods.
+
+```
+import {getDayjs} from 'c/dayjsUtils';
+
+...
+currentDate() {
+  return getDayjs().format('ddd, MMM DD YYYY')
+}
+...
+
+```
+
 ## Updating to New Version
 
 Follow these steps to update to  new version
